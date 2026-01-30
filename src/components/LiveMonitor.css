@@ -1,0 +1,73 @@
+.monitor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.monitor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.monitor-header h3 {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-text-secondary);
+}
+
+.copy-btn:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-text-primary);
+}
+
+.logs-window {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 12px;
+    overflow-y: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.log-entry {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    word-break: break-word;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 8px;
+}
+
+.log-time {
+    color: var(--color-accent);
+    margin-right: 8px;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.log-text {
+    color: var(--color-text-primary);
+}
+
+.empty-state {
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-top: 24px;
+    font-style: italic;
+}

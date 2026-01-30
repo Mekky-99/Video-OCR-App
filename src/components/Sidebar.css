@@ -1,0 +1,104 @@
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar-section h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.control-group {
+    margin-bottom: 16px;
+}
+
+.control-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+}
+
+.custom-select {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: white;
+    outline: none;
+}
+
+.custom-select:focus {
+    border-color: var(--color-accent);
+}
+
+.custom-slider {
+    width: 100%;
+    accent-color: var(--color-accent);
+}
+
+.action-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.start-btn {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.start-btn:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.start-btn:disabled {
+    background-color: var(--color-border);
+    cursor: not-allowed;
+    color: var(--color-text-secondary);
+}
+
+.stop-btn {
+    background-color: var(--color-error);
+    color: white;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+}
+
+.secondary-btn {
+    background-color: var(--color-panel);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+}
+
+.secondary-btn:hover {
+    border-color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.secondary-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+    border-color: var(--color-border);
+}

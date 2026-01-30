@@ -1,0 +1,139 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg);
+}
+
+.app-header {
+  height: 60px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background-color: var(--color-bg);
+  flex-shrink: 0;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-section h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+/* Main Grid Layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  /* Video Area | Control Panel */
+  height: calc(100vh - 60px);
+  /* Minus header */
+}
+
+/* Left Column */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--color-border);
+  padding: 24px;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.video-section {
+  flex: 2;
+  background-color: #000;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+  /* Ensure video stays within custom container */
+}
+
+/* Right Column */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-panel);
+  border-left: 1px solid var(--color-border);
+  overflow-y: auto;
+  /* Enable scrolling for the whole panel */
+  height: 100%;
+}
+
+.settings-sidebar,
+.monitor-section,
+.history-section {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settings-sidebar {
+  /* flex: 0 0 auto; removed to let it behave normally in flex container */
+}
+
+.monitor-section {
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.history-section {
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 350px;
+}
+
+/* Placeholders */
+.placeholder-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  height: 100%;
+  width: 100%;
+  gap: 12px;
+}
+
+.placeholder-icon {
+  color: var(--color-border);
+}
+
+.close-video-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.close-video-btn:hover {
+  background-color: var(--color-error);
+}
